@@ -5,6 +5,9 @@
 40 - 52  diamonds
 '''
 DECK = []
+count = 0
+total_trials = 0
+
 
 def card_simulator(num_of_trials):
     # validate param
@@ -12,7 +15,18 @@ def card_simulator(num_of_trials):
         print(f'invalid number of trials {num_of_trials}')
         return
 
+    # run n trials
+    count = 0
+    total = 0
+    for i in range(num_of_trials):
+        pass
 
+
+def print_results():
+    print("RESULTS:")
+    print(f'Total trials run:         {total_trials}')
+    print(f'Number of counts:         {count}')
+    print(f'Theoretical probabilitY:  {count / total_trials}')
 
 
 if __name__ == "__main__":
